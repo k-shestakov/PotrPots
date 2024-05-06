@@ -1,0 +1,66 @@
+// === Manrope font ==========================================
+@font-face {
+  font-family: 'Manrope';
+  src: url(../fonts/Manrope/Manrope-Regular.eot);
+  src: url(../fonts/Manrope/Manrope-Regular.eot?#iefix) format('embedded-opentype'),
+       url(../fonts/Manrope/Manrope-Regular.otf) format('otf'),
+       url(../fonts/Manrope/Manrope-Regular.svg#Manrope-Regular) format('svg'),
+       url(../fonts/Manrope/Manrope-Regular.ttf) format('truetype'),
+       url(../fonts/Manrope/Manrope-Regular.woff) format('woff'),
+       url(../fonts/Manrope/Manrope-Regular.woff2) format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url(../fonts/Manrope/Manrope-Bold.eot);
+  src: url(../fonts/Manrope/Manrope-Bold.eot?#iefix) format('embedded-opentype'),
+       url(../fonts/Manrope/Manrope-Bold.otf) format('otf'),
+       url(../fonts/Manrope/Manrope-Bold.svg#Manrope-Bold) format('svg'),
+       url(../fonts/Manrope/Manrope-Bold.ttf) format('truetype'),
+       url(../fonts/Manrope/Manrope-Bold.woff) format('woff'),
+       url(../fonts/Manrope/Manrope-Bold.woff2) format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url(../fonts/Manrope/Manrope-SemiBold.eot);
+  src: url(../fonts/Manrope/Manrope-SemiBold.eot?#iefix) format('embedded-opentype'),
+       url(../fonts/Manrope/Manrope-SemiBold.otf) format('otf'),
+       url(../fonts/Manrope/Manrope-SemiBold.svg#Manrope-SemiBold) format('svg'),
+       url(../fonts/Manrope/Manrope-SemiBold.ttf) format('truetype'),
+       url(../fonts/Manrope/Manrope-SemiBold.woff) format('woff'),
+       url(../fonts/Manrope/Manrope-SemiBold.woff2) format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+
+// === Bebas Neue ============================================
+@font-face {
+  font-family: 'BebasNeue';
+  src: url(../fonts/BebasNeue/BebasNeue-Regular.eot);
+  src: url(../fonts/BebasNeue/BebasNeue-Regular.eot?#iefix) format('embedded-opentype'),
+       url(../fonts/BebasNeue/BebasNeue-Regular.ttf) format('truetype'),
+       url(../fonts/BebasNeue/BebasNeue-Regular.svg#BebasNeue%20Regular) format('svg'),
+       url(../fonts/BebasNeue/BebasNeue-Regular.otf) format('otf'),
+       url(../fonts/BebasNeue/BebasNeue-Regular.woff2) format('woff2'),
+       url(../fonts/BebasNeue/BebasNeue-Regular.woff) format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BebasNeue Bold';
+  src: url(../fonts/BebasNeue-Bold.eot);
+  src: url(../fonts/BebasNeue-Bold.eot?#iefix) format('embedded-opentype'),
+       url(../fonts/BebasNeue-Bold.otf) format('otf'),
+       url(../fonts/BebasNeue-Bold.svg#BebasNeue%20Bold) format('svg'),
+       url(../fonts/BebasNeue-Bold.ttf) format('truetype'),
+       url(../fonts/BebasNeue-Bold.woff) format('woff'),
+       url(../fonts/BebasNeue-Bold.woff2) format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}

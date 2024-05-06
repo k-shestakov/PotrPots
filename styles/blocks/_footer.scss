@@ -1,0 +1,119 @@
+.footer {
+    padding: 30px 20px 30px;
+    margin-top: 72px;
+
+    @include onTablet {
+        padding: 74px 0px 117px;
+    }
+
+    @include onDesktop {
+        padding-bottom: 80px;
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        @include onTablet {
+            flex-direction: row;
+        }
+    }
+
+    &__addres {
+        @include onTablet {
+            flex: 0 0 25%;
+        }
+    }
+
+    &__location {
+        font-style: normal;
+        max-width: 170px;
+
+        &:not(:first-child) {
+            margin-top: 10px;
+        }
+    }
+
+
+    &__addres, &__title  {
+        display: none;
+        
+        @include onTablet {
+            display: block;
+        }
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        width: 100%;
+
+        @include onTablet {
+            align-items: center;
+            flex: 0 1 auto;
+            gap: 45px;
+        }
+
+        @include onDesktop {
+            gap: 85px;
+        }
+    }
+
+    &__socials {
+        display: flex;
+        gap: 25px;
+        justify-content: space-between;
+
+        @include onTablet {
+            gap: 80px;
+        }
+
+        @include onDesktop {
+            gap: 70px;
+        }
+    }
+
+    &__link {
+        @include onDesktop {
+            transition: transform 0.3s ease 0s;
+
+            &:hover {
+                transform: translateY(-5px);
+            }
+        }
+
+        & > img {
+            width: 20px;
+            height: 20px;
+
+            @include onDesktop {
+                width: 30px;
+                height: 30px;   
+            }
+        }
+    }
+
+    &__logo {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__about {
+        text-align: center;
+
+        @include onTablet {
+            text-align: left;
+            flex: 0 0 25%;
+            display: flex;
+            justify-content: end;
+        }
+    }
+
+    &__copy {
+        &:not(:first-child) {
+            margin-top: 10px;
+        }
+    }
+}

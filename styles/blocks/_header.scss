@@ -1,0 +1,32 @@
+.header {
+  position: fixed;
+  z-index: 50;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  &__container {
+    min-height: 68px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include onTablet {
+      min-height: 94px;
+    }
+
+    @include onDesktop {
+      min-height: 77px;
+    }
+  }
+
+  &__logo {
+    font-size: 36px;
+    font-family: 'BebasNeue';
+    font-weight: 700;
+  }
+
+  &__menu {
+  }
+}
+

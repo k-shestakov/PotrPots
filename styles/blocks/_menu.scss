@@ -1,0 +1,109 @@
+.menu {
+
+  &__icon {
+  }
+
+  &__body {
+    display: flex;
+    align-items: center;
+    flex: 0 1 auto;
+
+    flex-direction: column;
+    position: fixed;
+    max-width: 100%;
+    height: 100%;
+    background-color: #03839E;
+    right: -100%;
+    top: 0;
+    z-index: 5;
+    width: 231px;
+    padding: 10px 30px;
+    transition: right 0.3s ease 0s, color 0.3s ease 0s;
+
+    @include onTablet {
+        width: 331px;
+    }
+
+    @include onDesktop {
+        position: relative;
+        width: 100%;
+        flex-direction: row;
+        background-color: transparent;
+        padding: 0px;
+        right: 0;
+    }
+
+    .menu-open & {
+        color: #F8F8F8;
+        right: 0;
+    }
+}
+
+&__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 20px;
+    flex-wrap: nowrap;
+    height: 100%;
+
+    @include onDesktop {
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 60px;
+        row-gap: 5px;
+    }
+}
+
+  &__item {
+  }
+
+  &__link {
+  }
+
+  &__close {
+    color: #F8F8F8;
+    align-self: end;
+    width: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+
+    & > p {
+        position: relative;
+        margin-bottom: 67px;
+        font-size: 12px;
+        transform: rotate(-90deg);
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -13.5px;
+            right: 64px;
+            transform: rotate(90deg);
+            display: inline-block;
+            width: 1px;
+            text-align: center;
+            height: 44px;
+            background-color: #F8F8F8;
+        }
+    }
+
+    & > img {
+        padding-top: 10px;
+    }
+  }
+
+  &__busket {
+
+  }
+}
+
+.icon-menu {
+    display: block;
+  
+    @include onDesktop {
+        display: none;
+    }
+}

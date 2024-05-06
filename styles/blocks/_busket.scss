@@ -1,0 +1,38 @@
+.busket {
+    position: relative;
+
+    &__text {
+        display: block;
+
+        @include onDesktop {
+            display: none;
+        }
+    }
+
+    &__count {
+        display: block;
+        position: absolute;
+        top: -5px;
+        right: 15px;
+        text-align: center;
+        line-height: 14px;
+        font-size: 9px;
+        background-color: #Eb5757;
+        border-radius: 50%;
+        width: 14px;
+        height: 14px;
+        font-family: 'BebasNeue';
+
+        @include onDesktop {
+            display: none;
+        }
+    }
+
+    &__img {
+        display: none;
+
+        @include onDesktop {
+            display: block;
+        }
+    }
+}

@@ -1,0 +1,95 @@
+.features {
+
+    &__container {
+    }
+
+    &__title {
+        @include blueTitle(50px, 58px, 50px, 70px);
+    }
+
+    &__body {
+        margin-top: 25px;
+
+        @include onTablet {
+            margin-top: 52px;
+        }
+
+        @include onDesktop {
+            margin-top: 71px;
+        }
+    }
+
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        row-gap: 68px;
+
+        @media (min-width: 450px) {
+            justify-content: center;
+            row-gap: 30px;
+        }
+        
+        @include onTablet {
+            margin: 0 -10px;
+        }
+
+        @include onDesktop {
+            margin: 0 -15px;
+        }
+    }
+
+    &__column {
+        flex: 0 1 100%;
+
+        @media (min-width: 450px) {
+            padding: 0 10px;
+            flex: 0 1 50%;
+        }
+
+        @media (min-width: 725px) {
+            flex: 0 1 33.3333%;
+        }
+
+        @include onDesktop {
+            padding: 0 15px;
+        }
+    }
+
+    &__item {
+        text-align: center;
+
+        @media (min-width: 725px) {
+            text-align: left;
+        }
+
+        @include onDesktop {
+            text-align: center;
+        }
+    }
+
+    &__image {
+        overflow: hidden;
+        position: relative;
+        padding-bottom: 100%;
+
+        & > img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__subtitle {
+        margin-top: 35px;
+    }
+
+    &__text {
+        &:not(:first-child) {
+            margin-top: 20px;
+        }
+    }
+}
